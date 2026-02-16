@@ -28,14 +28,43 @@ const NavBar = () => {
 }
 
 const Verse = () => {
-  
+  return (
+    <>
+      <p> LALALA </p>
+    </>
+  )
 }
 
 const Pannel = () => {
   return (
     <>
+      <div className="flex flex-col items-center gap-6 mt-8 max-w-md mx-auto">
 
+        
+        <div className="flex flex-col gap-4 w-full">
+          <Verse />
+          <Verse />
+        </div>
+
+        
+        <div className="flex w-full gap-2">
+          <input
+            type="text"
+            placeholder="Jaki tu utwór?"
+            className="flex-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button className="px-4 py-2 bg-blue-600 text-white font-medium rounded-r-lg hover:bg-blue-700 transition-colors">
+            Submit
+          </button>
+          <button className="px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded hover:bg-gray-200 transition-colors">
+            Skip
+          </button>
+        </div>
+
+      </div>
     </>
+
+
   )
 }
 
@@ -43,6 +72,7 @@ const App = () => {
   return (
     <>
       <NavBar />
+      <Pannel />
       
     </>
   )
