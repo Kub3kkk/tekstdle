@@ -1,14 +1,15 @@
-@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Zalando+Sans:wght@700&display=swap');
+@import 'tailwindcss';
+
 
 body {
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   min-height: 100vh;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 500;
 }
 
 h1 {
   font-family: "Funnel Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
-  font-style: normal;
 }
